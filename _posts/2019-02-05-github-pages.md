@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitHub pages
+title: Hosting on GitHub pages
 date: 2019-02-05 21:15 +0000
 categories: makers jekyll github
 ---
