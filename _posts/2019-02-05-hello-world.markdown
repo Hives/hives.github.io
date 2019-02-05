@@ -13,5 +13,7 @@ I've chosen to use [Jekyll][jekyll-homepage] for this because:
 - Can use Git/GitHub to manage it, more good practice
 - It also means staying close to the command line, even more good practice.
 
+I guess I'll try Jekyll out over the precourse and make an assessment before the on-site course starts to decide if it's worth continuing with, or whether I should switch to something like Wordpress or Medium.
+
 [makers]: https://makers.tech/
 [jekyll-homepage]: https://jekyllrb.com/
