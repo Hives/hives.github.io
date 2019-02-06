@@ -4,7 +4,7 @@ title:  "Hello World"
 date:   2019-02-05 17:15:31 +0000
 categories: makers jekyll
 ---
-First post!!1
+# First post!!1
 
 The purpose of this blog is to make notes and keep track of my progress on the [Makers][makers] course. Students are encouraged to blog during the course to reflect on our learning, and to keep a record of issues we've faced and what we learned.
 
@@ -15,7 +15,7 @@ I've chosen to use [Jekyll][jekyll-homepage] for this because:
 - Can use Git/GitHub to manage it, more good practice
 - It also means staying close to the command line, even more good practice.
 
-I guess I'll try Jekyll out over the precourse and make an assessment before the on-site course starts to decide if it's worth continuing with, or whether I should switch to something like Wordpress or Medium.
+I guess I'll try Jekyll out over the precourse and make an assessment before the on-site course starts to decide if it's worth continuing with, or whether I should switch to something more straightforward like Wordpress or Medium.
 
 [makers]: https://makers.tech/
 [jekyll-homepage]: https://jekyllrb.com/
