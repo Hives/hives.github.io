@@ -2,7 +2,7 @@
 layout: post
 title: Hosting on GitHub pages
 date: 2019-02-05 21:15 +0000
-categories: makers jekyll github
+categories: [makers]
 ---
 Turns out that GitHub pages runs on Jekyll, so you can host your Jekyll site on GitHub as its own repo, and update it by pushing changes from your local repo to GitHub. So that's what I've done 🙂
 
