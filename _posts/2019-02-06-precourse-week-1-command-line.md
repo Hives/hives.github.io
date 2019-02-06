@@ -11,7 +11,7 @@ introduction to the command line.
 
 ## Basic commands
 
-Lessons 1-16 are on the following **basic** shell commands, including how they
+Lessons 1-16 are on the following basic shell commands, including how they
 use parameters and switches where appropriate:
 - `date`
 - `pwd` = "print working directory"
@@ -31,7 +31,7 @@ particular is useful for monitoring log files
 
 ## Advanced commands
 
-Lessons 17-31 were on **advanced** commands and concepts. This included:
+Lessons 17-31 were on advanced commands and concepts. This included:
 - Streams: #0 = stdin, #1 = stdout, #2 = stderr
 - Pipes and redirection, e.g. `cat file.txt | less`, `ls -lA | less`, `cat
 file1.txt > file2.txt`
