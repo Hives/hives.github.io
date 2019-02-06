@@ -42,3 +42,15 @@ plugins:
 
 jekyll_compose:
   auto_open: true
+draft_default_front_matter:
+  description: "Hello"
+  image:
+  category: "makers"
+  tags:
+post_default_front_matter:
+  description: "Hello"
+  image:
+  category: "makers"
+  tags:
+  published: false
+  sitemap: false
