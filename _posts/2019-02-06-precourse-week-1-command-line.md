@@ -36,7 +36,7 @@ file1.txt > file2.txt`
   directories (e.g. `find . -name "*.txt" -print` - don't forget the quotes
   around `"*.txt"`)
   - ...and `grep`. 
-- "Very brief mention of regular expressions" 😬: e.g. the example given was
+- "Very brief mention of regular expressions" 😬 The example given was
 `find ~ -name "*" -print | grep "\d\+"` in which grep is taking a regular
 expression as an input, `\d+\`, which will find all files that have a number in
 the filename. This didn't work on my machine - it found all files with a "d" in
