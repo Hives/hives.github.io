@@ -9,6 +9,8 @@ After spending a couple of days fiddling with this blog, I thought I ought to do
 some work, so here we go with Week 1 of the Makers precourse. The first lesson is an
 introduction to the command line.
 
+## Basic commands
+
 Lessons 1-16 are on the following **basic** shell commands, including how they
 use parameters and switches where appropriate:
 - `date`
@@ -26,6 +28,8 @@ use parameters and switches where appropriate:
 - `head` and `tail` for viewing the start and end of long files. `tail` in
 particular is useful for monitoring log files
 - using `man` pages to get help on commands
+
+## Advanced commands
 
 Lessons 17-31 were on **advanced** commands and concepts. This included:
 - Streams: #0 = stdin, #1 = stdout, #2 = stderr
