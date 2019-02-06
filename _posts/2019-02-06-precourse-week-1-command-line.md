@@ -25,7 +25,7 @@ use parameters and switches where appropriate:
 - `less` for viewing long files
 - `head` and `tail` for viewing the start and end of long files. `tail` in
 particular is useful for monitoring log files
-- using man pages to get help on commands
+- using `man` pages to get help on commands
 
 Lessons 17-31 were on **advanced** commands and concepts. This included:
 - Streams: #0 = stdin, #1 = stdout, #2 = stderr
