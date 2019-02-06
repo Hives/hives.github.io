@@ -6,7 +6,7 @@ categories: [makers]
 tags: [precourse, command line, bash]
 ---
 After spending a couple of days fiddling with this blog, I thought I ought to do
-some work, so here we go with Week 1 of the precourse. The first lesson is an
+some work, so here we go with Week 1 of the Makers precourse. The first lesson is an
 introduction to the command line.
 
 Lessons 1-16 are on the following **basic** shell commands, including how they
