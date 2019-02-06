@@ -27,7 +27,7 @@ use parameters and switches where appropriate:
 particular is useful for monitoring log files
 - using man pages to get help on commands
 
-Lessons 17-31 were on **advanced** commands. This included:
+Lessons 17-31 were on **advanced** commands and concepts. This included:
 - Streams: #0 = stdin, #1 = stdout, #2 = stderr
 - Pipes and redirection, e.g. `cat file.txt | less`, `ls -lA | less`, `cat
 file1.txt > file2.txt`
