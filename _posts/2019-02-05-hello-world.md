@@ -18,7 +18,7 @@ notes quickly. I don't want to be spending time wrestling with anything that's
 going to distract me from the course (famous last words? 😕)
 - Having said that... it's written in Ruby so there's the potential for some
 practice installing and managing Gems if I want to add extra functionality.
-- Can practice writing Markdown, which seems like fun.
+- Can practice writing Markdown.
 - Can use Git/GitHub to manage it, more good practice
 - It also means staying close to the command line, even more good practice.
 - And it looks like 🎉fun🎉, which should help me stick with it.
