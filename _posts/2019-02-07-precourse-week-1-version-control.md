@@ -44,6 +44,11 @@ default push and pull parameters
 The importance of meaningful commit messages was stressed, and the [commit
 messages of the jQuery project][jquery-commits] were given as a good example.
 
+Edited to add... I just worked out that if you want to push to GitHub without
+putting your password in every time, you gotta use the ssh address for the repo,
+e.g. `git@github.com:Hives/hives.github.io.git`, instead of the https address.
+Very important...
+
 ## $BONUS
 
 Many optional extras were given for learning more about git:
