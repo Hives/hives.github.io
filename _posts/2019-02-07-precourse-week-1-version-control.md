@@ -24,7 +24,7 @@ Commands include
 
 ## GitHub
 
-Lesson 42 stressed that "as a developer, you are your GitHub profile", and that
+Lesson 42 said that "as a developer, you are your GitHub profile", and that
 it's the first thing potential employers will check. It recommends that Makers
 students use git and GitHub for all the code we write from here on. It also says
 to treat it like a CV, i.e. add a picture and your real name. So I've added my
