@@ -7,8 +7,8 @@ tags: java, hello world, TDD, PLIBMTTBHGATY
 ---
 
 
-On Saturday 9th Feb I went in to the Makers PLIBMTTBHGATY\* open day, intending to
-try something new. I decided to have a go at Java, not knowing anything about
+On Saturday 9th Feb I went in to the Makers PLIBMTTBHGATY\* open day, to have a
+go at something new. I decided to have a go at Java, not knowing anything about
 it. Sat with a couple of other Makers' attendees, I worked through the exercises
 in this repo:
 <https://github.com/hives/java_intro>
