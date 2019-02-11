@@ -70,8 +70,6 @@ Advantages:
 Disadvantages:
 - Slower (although gap is closing)
 
-<https://thesocietea.org/2015/07/programming-concepts-compiled-and-interpreted-languages/>
-
 **Java is a *bytecode language*, which means it's somewhere in between:**
 
 > Bytecode languages are a type of programming language that fall under the
