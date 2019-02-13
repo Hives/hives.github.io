@@ -28,3 +28,5 @@ Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '[ssh.github.com]:443,[192.30.253.123]:443' (RSA) to the list of known hosts.
 Hi Hives! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+... and after that `git push` worked...
