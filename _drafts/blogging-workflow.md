@@ -11,4 +11,5 @@ Editing markdown in vim:
 - Spellcheck! `autocmd BufRead,BufNewFile *.md setlocal spell`
   - Use `zg` to add words to dictionary
   - `[s` goes to previous misspelled word, `]s` to next
-
+- Use Goyo to soft wrap text at 80 characters, with some modifications?
+  - http://makble.com/vim-distraction-free-mode
