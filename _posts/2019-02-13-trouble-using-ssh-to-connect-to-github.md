@@ -23,7 +23,6 @@ ssh: connect to host github.com port 22: Connection timed out
 i.e. the connection was timing out.
 
 Then I found this blog post:
-
 <https://bengsfort.github.io/articles/fixing-git-push-pull-timeout/>
 
 So I tried what he was suggesting, and added this to my ~/.ssh/config:
