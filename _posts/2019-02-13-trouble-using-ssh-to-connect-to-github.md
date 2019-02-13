@@ -62,7 +62,7 @@ help page][using-ssh-over-the-https-port]:
 It's talking about cloning there, but I guess it means SSH-ing in general? So I
 think my friend's internet connection was preventing me connecting to GitHub's
 SSH port (22), but it was happy for me to connect to the HTTPS port (443).
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
 
 I've left those lines commented out in my ~/.ssh/config in case I ever need them
 again.
