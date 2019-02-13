@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weeks 2 and 3 - learning objectives
+title: Precourse Weeks 2 and 3 - learning objectives
 date: 2019-02-12 23:52 +0000
 category: makers
 tags: ruby
@@ -8,7 +8,7 @@ published: false
 sitemap: false
 ---
 
-There were some topics in the Weeks 2 and 3 [learning objectives][teachable]
+There were some topics in the Weeks 2 and 3 [learning objectives][teachable.com]
 which I thought I could do with some more clarity on:
 
 ## Blocks
@@ -21,4 +21,4 @@ which I thought I could do with some more clarity on:
 
 ## Shovel operator
 
-[teachable]:https://makersacademy.teachable.com/courses/256825/lectures/3989238
+[teachable.com]:https://makersacademy.teachable.com/courses/256825/lectures/3989238
