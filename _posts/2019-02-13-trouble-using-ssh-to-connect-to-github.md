@@ -46,8 +46,8 @@ Hi Hives! You've successfully authenticated, but GitHub does not provide shell a
 
 ... and after that `git push` worked.
 
-When I got home in the evening, I commented out those extra lines from my
-~/.ssh/config, again, and found I now had no problem SSH-ing to GitHub.
+In the evening, when I was back on my home network, I commented out those extra
+lines from my ~/.ssh/config and found I now had no problem SSH-ing to GitHub.
 
 So what was happening? And what did the solution do?
 
@@ -59,10 +59,10 @@ help page][using-ssh-over-the-https-port]:
 > using an SSH connection made over the HTTPS port. Most firewall rules should
 > allow this, but proxy servers may interfere.
 
-It's talking about cloning there, but I guess it means SSH-ing in general? So I
-think my friend's internet connection was preventing me connecting to GitHub's
-SSH port (22), but it was happy for me to connect to the HTTPS port (443).
-¯\\\_(ツ)\_/¯
+It's talking about cloning there, but I guess it applied to SSH-ing to GitHub in
+general?  So I think my friend's internet connection was preventing me
+connecting to GitHub's SSH port (22), but it was happy for me to connect to the
+HTTPS port (443).  ¯\\\_(ツ)\_/¯
 
 I've left those lines commented out in my ~/.ssh/config in case I ever need them
 again.
