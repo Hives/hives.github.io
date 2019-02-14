@@ -10,8 +10,8 @@ Today I was working at a friend's house, and when I tried pushing a repo to
 GitHub, the command seemed to hang. Google suggested the problem might be
 something to do with the SSH connection, so I tested it like this:
 
-```
-➜ ssh -v -T git@github.com
+```shell_session
+$ ssh -v -T git@github.com
 OpenSSH_7.9p1, OpenSSL 1.1.1a  20 Nov 2018
 debug1: Reading configuration data /home/hives/.ssh/config
 debug1: Reading configuration data /etc/ssh/ssh_config
@@ -35,8 +35,8 @@ Host github.com
 
 Then I tested my GitHub SSH connection again:
 
-```
-➜ ssh -T git@github.com
+```shell_session
+$ ssh -T git@github.com
 The authenticity of host '[ssh.github.com]:443 ([192.30.253.123]:443)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no)? yes
