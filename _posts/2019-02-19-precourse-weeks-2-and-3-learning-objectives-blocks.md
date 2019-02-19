@@ -11,7 +11,7 @@ objectives][teachable.com] which reminded me of some stuff that was covered in
 the CodeAcademy Ruby course I did to prepare for the Makers interview, but which
 I realised I had forgotten. So I refreshed my memory by looking up blocks, procs
 and lambdas and a couple of other topics in David Black's The Well-Grounded
-Rubyist, which seems like a good resource for getting into the nitty-gritty with
+Rubyist, which seems like a great resource for getting into the nitty-gritty with
 Ruby. This ended up being quite long, so I'll break it up into a number of
 posts.
 
