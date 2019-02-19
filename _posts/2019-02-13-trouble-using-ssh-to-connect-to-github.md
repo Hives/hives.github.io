@@ -25,7 +25,7 @@ i.e. the connection was timing out.
 Then I found this blog post:
 <https://bengsfort.github.io/articles/fixing-git-push-pull-timeout/>
 
-So I tried what he was suggesting, and added this to my ~/.ssh/config:
+I tried what he was suggesting, and added this to my ~/.ssh/config:
 
 ```
 Host github.com

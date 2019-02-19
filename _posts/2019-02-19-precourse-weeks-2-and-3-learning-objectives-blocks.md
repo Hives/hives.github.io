@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Precourse Weeks 2 and 3, Ruby learning objectives - blocks, procs, lambdas etc.
-date: 2019-02-12 23:52 +0000
+title: Precourse Weeks 2 and 3, Ruby learning objectives - blocks
+date: 2019-02-19 20:29 +0000
 category: makers
-tags: ruby, blocks, procs, lambdas
+tags: ruby, blocks
 ---
 
 There were some topics in the precourse weeks 2 and 3 [learning
@@ -12,7 +12,10 @@ the CodeAcademy Ruby course I did to prepare for the Makers interview, but which
 I realised I had forgotten. So I refreshed my memory by looking up blocks, procs
 and lambdas and a couple of other topics in David Black's The Well-Grounded
 Rubyist, which seems like a good resource for getting into the nitty-gritty with
-Ruby.
+Ruby. This ended up being quite long, so I'll break it up into a number of
+posts.
+
+First up:
 
 ## Blocks
 
@@ -108,79 +111,7 @@ end
 puts "x after the block ended is #{x}" # still 100 - the outer x is unchanged
 ```
 
-You don't need parameters either, so this is valid: `{ |; x|
+You don't need parameters either, so this is apparently valid: `{ |; x|
 x_is_now_local_to_the_block }`
-
-## Procs
-
-A proc is a way of turning a code block into an object, so you can store it,
-pass it around as a method argument (remember blocks can only be passed
-directly, not as an argument), and call it.
-
-You create a proc by passing a block to `Proc.new` or the `proc` method, and
-call it using the `call` method:
-
-```ruby
-pr1 = Proc.new { puts "Inside a Proc's block" }
-pr2 = proc { puts "Inside another Proc's block" } 
-pr1.call # outputs "Inside a Proc's block"
-pr2.call # outputs "Inside another Proc's block"
-```
-
-Both of these examples do the same thing (prior to Ruby 1.9 they were slightly
-different...). The code block becomes the body of the proc.
-
-Because a proc is an object, you can now use it to pass the code block to
-methods as an argument:
-
-```ruby
-pr = Proc.new { puts "Inside a Proc's block" }
-
-def my_method (a)
-  a.call
-end
-
-my_method(pr) # outputs "Inside a Proc's block"
-```
-
-We saw in the previous section how you can pass a code block to a method, and
-then run it from inside the method using the `yield` keyword. You can also write
-a method that will take a block, and convert it into a proc to use internally,
-using this `&` syntax:
-
-```ruby
-def capture_block(&block)
-  block.call
-end
-capture_block { puts "Inside the block" } # outputs "Inside the block"
-```
-
-The `&` tells the block to take the block, do something like `Proc.new` on it,
-and turn it into a proc. Quite why you would prefer to do this rather than keep
-it as a block and using `yield` I'm not sure right now...
-
-### Procs as closures
-
-See page 427 for this:
-```ruby
-def call_some_proc(pr)
-  a = "irrelevant 'a' in method scope"    
-  puts a
-  pr.call
-  
-end
-a = "'a' to be used in Proc block"
-pr = Proc.new { puts a }
-pr.call
-call_some_proc(pr)
-```
-
-Make notes on this...
-
-## Lambdas
-
-## Parallel assignment
-
-## Shovel operator
 
 [teachable.com]:https://makersacademy.teachable.com/courses/256825/lectures/3989238
