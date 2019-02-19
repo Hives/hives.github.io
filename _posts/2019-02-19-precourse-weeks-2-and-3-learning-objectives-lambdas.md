@@ -13,8 +13,8 @@ Black's The Well-Grounded Rubyist.
 ## Lambdas
 
 A lambda is a proc with some "special internal engineering". We create one by
-passing a block to the `lambda` method, and it returns a lambda with block as
-the function body:
+passing a block to the `lambda` method, and it returns a lambda with the block
+as the function body:
 
 ```ruby
 lam = lambda { puts "I'm a lambda!" }
@@ -27,9 +27,9 @@ is from the class `Proc`, but the `(lambda)` at the end indicates that it's a
 special lambda flavoured proc.
 
 Lambdas differ from normal procs in three ways. First, they can only be created
-explicitly. Remember how we could create a proc by passing a block to a method,
-e.g. with `def my_method(&block)`? Well that's implicit creation of a proc,
-which means it's just a normal proc, not a lambda.
+explicitly. Remember how we could create a proc by passing a block to a method
+using the `&` syntax, e.g. with `def my_method(&block)`? Well that's implicit
+creation of a proc, which means it's just a normal proc, not a lambda.
 
 Second, they treat the `return` keyword differently. In a lambda `return` will
 exit from the body of the lambda back into the code from which the lambda was
@@ -48,6 +48,9 @@ def proc_lambda_return_test
   puts "You won't see this"
 end
 proc_lambda_return_test
+
+# output:
+#  Still running
 ```
 
 Thirdly, they are fussy about getting the right number of arguments. Too many or
@@ -68,5 +71,5 @@ lam2.call(7, 8) # outputs 56
 
 This exists for historical reasons (prior to Ruby 1.8 the parser had trouble
 with method-style argument syntax inside pipes for lambdas) which no longer
-pertain so the stabby syntax is no longer necessary, apparently you still see it
-used fairly widely.
+pertain, so the stabby syntax is no longer necessary. Apparently you still see it
+used fairly widely though.

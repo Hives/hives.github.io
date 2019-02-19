@@ -6,7 +6,7 @@ category: makers
 tags: ruby
 ---
 
-After looking a blocks, procs and lambdas there were a couple of other odd bits
+After looking at blocks, procs and lambdas there were a couple of other odd bits
 that came up in the precourse weeks 2 and 3 that I wanted to make some notes on.
 
 ## "Splat" operator (\*)
@@ -38,7 +38,7 @@ So the `middle` variable here takes the middle elements and turns them into a
 new array.
 
 Looks like there's lots of cool stuff you can do with a splat, so watch out for
-it. It's also fun to say. Splat splat splat.
+it.
 
 ## Double splat (\*\*)
 

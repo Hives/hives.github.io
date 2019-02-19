@@ -83,12 +83,20 @@ exists, they will remain distinct:
 
 ```ruby
 x = 100 # outer x
-[1,2,3].each do |x| # block parameter is called x
-  puts "Parameter x is #{x}" # 1, 2, 3
+[1,2].each do |x| # block parameter is also called x
+  puts "Parameter x is #{x}"
   x = x + 10
-  puts "Reassigned x in block, now it's #{x}" # 11, 12, 13
+  puts "Reassigned x in block, now it's #{x}"
 end
-puts "Outer x is still #{x}" # 100
+
+puts "Outer x is still #{x}"
+
+# outputs:
+#   Parameter x is 1
+#   Reassigned x in block, now it's 11
+#   Parameter x is 2
+#   Reassigned x in block, now it's 12
+#   Outer x is still 100
 ```
 
 In this case the `x` inside the block is different from the `x` outside the
