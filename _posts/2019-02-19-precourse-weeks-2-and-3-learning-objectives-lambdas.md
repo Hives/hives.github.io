@@ -31,7 +31,10 @@ explicitly. Remember how we could create a proc by passing a block to a method
 using the `&` syntax, e.g. with `def my_method(&block)`? Well that's implicit
 creation of a proc, which means it's just a normal proc, not a lambda.
 
-Second, they treat the `return` keyword differently. In a lambda `return` will
+Second, they are fussy about getting the right number of arguments. Too many or
+too few will throw an error.
+
+Third, they treat the `return` keyword differently. In a lambda `return` will
 exit from the body of the lambda back into the code from which the lambda was
 called. But calling `return` inside a proc triggers a return from the method in
 which was the proc was called. So in this example the second `puts` won't
@@ -53,8 +56,8 @@ proc_lambda_return_test
 #  Still running
 ```
 
-Thirdly, they are fussy about getting the right number of arguments. Too many or
-too few will throw an error.
+The `return` behaviour of `procs` seems counterintuitive, so it might be safer
+to use `lambda`s in general for that reason.
 
 ### The 'stabby lambda' constructor
 
