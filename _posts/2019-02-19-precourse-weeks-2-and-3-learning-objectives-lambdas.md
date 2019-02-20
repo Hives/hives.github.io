@@ -7,8 +7,8 @@ tags: ruby, lambdas
 ---
 
 The final big topic I wanted to look at from the precourse weeks 2 and 3
-[learning objectives][teachable.com] was lambdas. Shout out again to David
-Black's The Well-Grounded Rubyist.
+learning objectives was lambdas. Shout out once again to David Black's The
+Well-Grounded Rubyist.
 
 ## Lambdas
 
