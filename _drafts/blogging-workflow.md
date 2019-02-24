@@ -23,8 +23,9 @@ Creating / publishing posts:
   - publish drafts with `bundle exec jekyll publish`
   - create aliases for those commands
 - use a vim snippet ([UltiSnips][ultisnips]) to insert date into front matter
-  - had to use [Supertab][supertab] to make this play nicely with YouCompleteMe,
-  which has messed up tab behaviour in the latter. Can this be fixed?
+  - UltiSnips and YouCompleteMe default behaviour conflicts. Resolved by mapping
+  UltinSnips' expand snippet to ctrl-j
+- can use FZF vim plugin to find and edit posts quickly
 
 Blog features wishlist
 - Next/prev links to click through posts
@@ -32,4 +33,3 @@ Blog features wishlist
 - Search? there are some plugins that do client-side search
 
 [ultisnips]:https://github.com/SirVer/ultisnips
-[supertab]:https://github.com/ervandew/supertab
