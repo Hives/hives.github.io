@@ -2,8 +2,8 @@
 layout: post
 title: Precourse Week 1 - Version Control
 date: 2019-02-07 16:51 +0000
-category: makers
-tags: 
+category: [makers]
+tags: [git, github, precourse]
 ---
 
 The next chunk of lessons are about version control.

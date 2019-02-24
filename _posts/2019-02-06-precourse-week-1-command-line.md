@@ -3,7 +3,7 @@ layout: post
 title: Precourse Week 1 - Command Line
 date: 2019-02-06 17:00:00 +0000
 categories: [makers]
-tags: [precourse, command line, bash]
+tags: [precourse, command line]
 ---
 After spending a couple of days fiddling with this blog, I thought I ought to do
 some work, so here we go with Week 1 of the Makers precourse. The first lesson

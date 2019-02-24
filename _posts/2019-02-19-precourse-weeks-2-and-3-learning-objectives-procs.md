@@ -3,7 +3,7 @@ layout: post
 title: Precourse Weeks 2 and 3, Ruby learning objectives - procs
 date: 2019-02-19 21:15 +0000
 category: makers
-tags: ruby, procs
+tags: [ruby, procs]
 ---
 
 After blocks, the next topic I wanted to go over from the precourse weeks 2 and

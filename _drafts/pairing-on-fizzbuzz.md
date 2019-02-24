@@ -2,7 +2,7 @@
 layout: post
 title: Precourse Week 4, pairing on FizzBuzz
 category: makers
-tags: ruby, fizzbuzz, tdd, rspec, git, github, pair programming
+tags: [ruby, fizzbuzz, tdd, rspec, git, github, pair programming, precourse]
 ---
 
 Today I met up with [Cosmin][cosmins-github], another Makers candidate in my

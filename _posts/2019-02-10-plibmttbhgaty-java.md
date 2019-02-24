@@ -3,7 +3,7 @@ layout: post
 title: PLIBMTTBHGATY v4.0 - Java basics
 date: 2019-02-10 18:00 +0000
 category: makers
-tags: java, hello world, TDD, PLIBMTTBHGATY
+tags: [java, hello world, tdd, plibmttbhgaty]
 ---
 
 

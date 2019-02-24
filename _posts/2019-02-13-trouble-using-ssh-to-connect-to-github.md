@@ -3,7 +3,7 @@ layout: post
 title: Trouble using SSH to connect to GitHub
 date: 2019-02-13 18:56 +0000
 category: makers
-tags: git, github, ssh
+tags: [git, github, ssh]
 ---
 
 Today I was working at a friend's house, and when I tried pushing a repo to

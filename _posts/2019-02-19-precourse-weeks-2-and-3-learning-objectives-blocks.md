@@ -3,7 +3,7 @@ layout: post
 title: Precourse Weeks 2 and 3, Ruby learning objectives - blocks
 date: 2019-02-19 20:29 +0000
 category: makers
-tags: ruby, blocks
+tags: [ruby, blocks]
 ---
 
 There were some topics in the precourse weeks 2 and 3 [learning

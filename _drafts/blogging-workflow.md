@@ -2,7 +2,7 @@
 layout: post
 title: Blogging workflow
 categories: makers
-tags: jekyll, vim, markdown
+tags: [jekyll, vim, markdown]
 ---
 
 Editing markdown in vim:
@@ -16,6 +16,12 @@ Editing markdown in vim:
   - `[s` goes to previous misspelled word, `]s` to next
 - Use Goyo to soft wrap text at 80 characters, with some modifications?
   - http://makble.com/vim-distraction-free-mode
+- Use liquid's {% raw %}`{% raw %}`{% endraw %} tag to allow Liquid code blocks
+to display without executing
+
+Other good vim stuff I learned:
+  - `it` = 'inner tag block' - selects inside of a HTML or XML block
+  - `at` = 'a tag block' - same as above but selects tags too
 
 Creating / publishing posts:
 - create drafts/posts using jekyll-compose

@@ -3,7 +3,7 @@ layout: post
 title: Precourse Weeks 2 and 3 - Ruby with mastery learning
 date: 2019-02-12 15:06 +0000
 category: makers
-tags: ruby
+tags: [ruby, precourse]
 ---
 
 The material for weeks 2 and 3 of the precourse was 10 ruby lessons, covering

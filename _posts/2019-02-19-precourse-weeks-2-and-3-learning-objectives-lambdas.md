@@ -3,7 +3,7 @@ layout: post
 title: Precourse Weeks 2 and 3, Ruby learning objectives - lambdas
 date: 2019-02-19 21:44 +0000
 category: makers
-tags: ruby, lambdas
+tags: [ruby, lambdas]
 ---
 
 The final big topic I wanted to look at from the precourse weeks 2 and 3
