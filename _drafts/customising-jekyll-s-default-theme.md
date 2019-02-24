@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hacking Jekyll's default theme
+title: Customising Jekyll's default theme
 category: metablogging
 tags: [jekyll, liquid]
 ---
@@ -26,7 +26,8 @@ I added my own Sass rules by copying Minima's `main.scss` into
 
 First up, since I've been fastidiously tagging all my posts since I started
 blogging, I wanted to actually use the tags on the site. I wanted to display
-them on post pages, and also create a "Tags" page. Ditto for categories.
+them on post pages, and also create a "Tags" page, and maybe something similar
+for categories.
 
 ### Display tags and categories on post pages
 
@@ -54,7 +55,7 @@ beneath the post content:
 {% endraw %}
 
 I added the equivalent code for categories in the same place too. This creates a
-comma-separated list of links to the relevant tag pages. These don't exist at
+comma-separated list of links to the relevant tag pages. Tag pages don't exist at
 the moment, so I'll be coming back to that...
 
 The `forloop.last` part is an example of a Liquid *helper variable*.
@@ -94,4 +95,66 @@ applied it to `.tags-and-categories` in my `assets/main.scss`:
 }
 ```
 
+### Create a "tags" page
 
+It wan't too hard to create a tags page. I created `tags.html` in the root
+directory, gave it some front matter:
+
+{% raw %}
+```html
+---
+layout: default
+title: Tags
+permalink: tags
+---
+
+<article class="tags">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+</article>
+```
+{% endraw %}
+
+and it becomes accessible at `mysite.com/tags` and automatically appears in the
+main menu.
+
+I mostly took the code displaying the tag info from [this Jekyll theme's tag
+page](https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html). It
+works by iterating over the `site.tags` variable, like this:
+
+{% raw %}
+```liquid
+{% for tag in site.tags %}
+<h2>{{ tag[0] }}</h2>
+<ul>
+  {% for post in tag[1] %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+    {{ post.title }}
+    </a>
+    <small class="post-date">({{ post.date | date_to_string }})</small>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+```
+{% endraw %}
+ 
+What wasn't easy however, was sorting the list of tags in a sensible way. I
+wanted to make a sort of tag cloud, listing the name of the tag alongside the
+number of posts using that tag, and make the tag's name link to a list of
+tagged posts. And I wanted to sort the tags from most popular to least popular,
+and then alphabetically after that. Unfortunately this seems to be way too
+complicated to achieve with Liquid's syntax alone.
+
+[I found an ingenious partial solution
+here](https://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/). To get
+around the fact that you can't construct hashes of data in Liquid, or sort
+hashes, he put all the desired data into a long string separated by a special
+character (he used `#`, I used `$`), so that he could later break it up into
+an array which you can then sort... it's not pretty but it works 😬. Using this
+method I managed to get the tag cloud sorted in reverse by popularity (high to
+low), then alphabetically.  
