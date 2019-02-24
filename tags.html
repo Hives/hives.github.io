@@ -1,0 +1,54 @@
+---
+layout: default
+title: Tags
+---
+<article class="tags">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <section class="tag-list">
+    {% capture tag_info %}
+      {%- for tag in site.tags -%}
+        {% assign tagname = tag[0] %}
+        {% assign tag_slug = tagname | slugify %}
+        {% comment %}
+          Create a string with the number of posts with the tag at the front (for
+          sorting), then the name, then the slug for the tag, separated with a
+          $. Info for each tag is separated with a comma.
+        {% endcomment %}
+        {{- site.tags[tagname].size -}}${{- tagname -}}$#{{- tag_slug -}},
+      {%- endfor -%}
+    {% endcapture %}
+    {% comment %}
+      Split up the big string, sort it by number of posts, reverse it, and create
+      list of links.
+    {% endcomment %}
+    {% assign tag_hashes = tag_info | split:',' | sort | reverse %}
+    {% for tag_details in tag_hashes %}
+      {% assign t = tag_details | split: '$' %}
+      <a href = "{{ t[2] }}">{{ t[1] }}</a> ({{- t[0] | strip -}})
+      {%- unless forloop.last -%}, {%- endunless -%}
+    {% endfor %}
+  </section>
+  <hr>
+  <section class="tags-expo">
+    <div class="tags-expo-section">
+      {% for tag in site.tags %}
+      <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+      <ul class="tags-expo-posts">
+        {% for post in tag[1] %}
+        <li>
+          <a class="" href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          </a>
+          <small class="post-date">({{ post.date | date_to_string }})</small>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </section>
+
+</article>
