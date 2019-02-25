@@ -19,3 +19,14 @@ hr {
 .tags-expo .post-date {
   color: $grey-color;
 }
+
+.page-navigation {
+    .next, .prev {
+        display: inline-block;
+        width: 45%;
+        &.next {
+            text-align: right;
+            float: right;
+        }
+    }
+}
