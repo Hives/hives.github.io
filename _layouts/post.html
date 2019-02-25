@@ -23,7 +23,7 @@ layout: default
     <span class="post-tags">
     {% if page.tags.size > 0 %}
       Tags: {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}/">{{ tag }}</a>
+        <a href="/tags#{{ tag | slugify }}">{{ tag }}</a>
         {%- unless forloop.last -%}
           ,
         {%- endunless -%}
@@ -36,7 +36,7 @@ layout: default
     <span class="post-categories">
     {% if page.categories.size > 0 %}
       Categories: {% for category in page.categories %}
-        <a href="/categories/{{ category }}/">{{ category }}</a>
+        {{ category }}
         {%- unless forloop.last -%}
           ,
         {%- endunless -%}
