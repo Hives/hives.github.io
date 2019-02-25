@@ -15,7 +15,7 @@ url of those pages. Hence, in `_layouts/post.html`:
 <div class="page-navigation">
   {% if page.previous.url %}
     <div class="prev">
-    <a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+      <a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
     </div>
   {% endif %}
   {% if page.next.url %}
