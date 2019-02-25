@@ -24,9 +24,9 @@ hr {
     .next, .prev {
         display: inline-block;
         width: 45%;
-        &.next {
-            text-align: right;
-            float: right;
-        }
+    }
+    .next {
+        text-align: right;
+        float: right;
     }
 }
