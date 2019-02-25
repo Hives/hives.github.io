@@ -27,6 +27,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,6 +40,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+paginate: 8
+paginate_path: "/page:num/"
 
 jekyll_compose:
   auto_open: true
