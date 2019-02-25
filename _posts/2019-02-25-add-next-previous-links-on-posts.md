@@ -6,9 +6,10 @@ category: metablogging
 tags: jekyll
 ---
 
-This one was much simpler than creating the tag pages. Jekyll has 
-`page.previous` and `page.next` variables which you can use get the title and
-url of those pages. Hence, in `_layouts/post.html`:
+This one was much simpler than creating the tag pages (see previous post (I can
+say "see previous post now" 🙂)). Jekyll has `page.previous` and `page.next`
+variables which you can use get the title and url of those pages. Hence, in
+`_layouts/post.html`:
 
 {% raw %}
 ```liquid
