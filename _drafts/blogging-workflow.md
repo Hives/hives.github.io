@@ -37,5 +37,6 @@ Blog features wishlist
 - Next/prev links to click through posts
 - Tags and categories pages
 - Search? there are some plugins that do client-side search
+- Line numbers on code blocks?
 
 [ultisnips]:https://github.com/SirVer/ultisnips
