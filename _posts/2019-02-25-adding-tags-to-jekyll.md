@@ -36,7 +36,7 @@ folder, and added this beneath the post content:
   <span class="post-tags">
   {% if page.tags.size > 0 %}
     Tags: {% for tag in page.tags %}
-      <a href="/tags/{{ tag }}/">{{ tag }}</a>
+      <a href="/tags#{{ tag | slugify }}/">{{ tag }}</a>
       {%- unless forloop.last -%}
         ,
       {%- endunless %}
@@ -50,8 +50,8 @@ folder, and added this beneath the post content:
 {% endraw %}
 
 I added similar code for categories in the same place too. This creates a
-comma-separated list of links to the relevant section of the tag page. The tag
-page don't exist at the moment, so I'll be coming back to that...
+comma-separated list of tags which link to the relevant section of the tag page.
+The tag page doesn't exist at the moment, but that's the next job.
 
 The `forloop.last` part is an example of a Liquid *helper variable*.
 
@@ -154,15 +154,7 @@ this method I managed to get the tag cloud sorted in reverse order by popularity
 GitHub repo for this site][tags-page-in-github].
 
 A couple more styling rules in `assets/main.scss` and that was the tags page
-finished. Once all that was sorted out I went back and updated the tags in
-`_layouts/post.html` to link to the appropriate place on the tags page, like
-this:
-
-{% raw %}
-```liquid
-<a href="/tags#{{ tag | slugify }}">{{ tag }}</a>
-```
-{% endraw %}
+finished.
 
 [ingenious-workaround]:https://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/
 [tags-page-in-github]:https://github.com/Hives/hives.github.io/blob/1735a794a93dacfd74945814158495b55c1cf9e5/tags.html
