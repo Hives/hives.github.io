@@ -34,10 +34,10 @@ And some styling in my `assets/main.scss`:
     .next, .prev {
         display: inline-block;
         width: 45%;
-        &.next {
-            text-align: right;
-            float: right;
-        }
+    }
+    .next {
+        text-align: right;
+        float: right;
     }
 }
 ```
