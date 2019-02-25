@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Customising Jekyll's default theme
+title: Adding tags to my Jekyll site
+date: 2019-02-25 00:11 +0000
 category: metablogging
 tags: [jekyll, liquid]
 ---
 
-I wanted to make some changes to the look of my (this) Jekyll blog. Nothing too
-outré. Helpfully, Minima, the Jekyll default theme, has a README file with information
-about customising it. I'm not using the most up to date version of Minima (maybe
+I wanted to add some features to my (this) Jekyll blog. Nothing too outré - a
+tags page, next/previous post links, pagination on the list of posts. Helpfully,
+Minima, the Jekyll default theme, has a README file with information about
+customising it. I'm not using the most up to date version of Minima (maybe
 because the github-pages gem requires an older version of Jekyll?), so here's
-the relevant version of the README for my site:
+the correct README for the version I'm using:
 
 <https://github.com/jekyll/minima/blob/v2.5.0/README.md>
 
@@ -22,18 +24,11 @@ the theme folder.
 I added my own Sass rules by copying Minima's `main.scss` into
 `<my-site>/assets` and putting my code below the `@import "minima";` line.
 
-## Tags and Categories
-
-First up, since I've been fastidiously tagging all my posts since I started
-blogging, I wanted to actually use the tags on the site. I wanted to display
-them on post pages, and also create a "Tags" page, and maybe something similar
-for categories.
-
-### Display tags and categories on post pages
+## Display tags (and categories) on post pages
 
 To get tags on my post pages I created a `_layouts` folder in the root folder of
-my site, copied `post.html` into it from the Minima gem folder, and added this
-beneath the post content:
+my site, copied into it the posts template `post.html` from the Minima gem
+folder, and added this beneath the post content:
 
 {% raw %}
 ```liquid
@@ -54,9 +49,9 @@ beneath the post content:
 ```
 {% endraw %}
 
-I added the equivalent code for categories in the same place too. This creates a
-comma-separated list of links to the relevant tag pages. Tag pages don't exist at
-the moment, so I'll be coming back to that...
+I added similar code for categories in the same place too. This creates a
+comma-separated list of links to the relevant section of the tag page. The tag
+page don't exist at the moment, so I'll be coming back to that...
 
 The `forloop.last` part is an example of a Liquid *helper variable*.
 
@@ -95,10 +90,10 @@ applied it to `.tags-and-categories` in my `assets/main.scss`:
 }
 ```
 
-### Create a "tags" page
+## Create a tags page
 
-It wan't too hard to create a tags page. I created `tags.html` in the root
-directory, gave it some front matter:
+It's easy to create a new page in Jekyll - I created a `tags.html` file in the
+root directory and gave it some front matter:
 
 {% raw %}
 ```html
@@ -118,11 +113,11 @@ permalink: tags
 ```
 {% endraw %}
 
-and it becomes accessible at `mysite.com/tags` and automatically appears in the
+This is then accessible at `mysite.com/tags` and it automatically appears in the
 main menu.
 
 I mostly took the code displaying the tag info from [this Jekyll theme's tag
-page](https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html). It
+page][codinfox-lanyon-tags-page]. It
 works by iterating over the `site.tags` variable, like this:
 
 {% raw %}
@@ -147,14 +142,28 @@ What wasn't easy however, was sorting the list of tags in a sensible way. I
 wanted to make a sort of tag cloud, listing the name of the tag alongside the
 number of posts using that tag, and make the tag's name link to a list of
 tagged posts. And I wanted to sort the tags from most popular to least popular,
-and then alphabetically after that. Unfortunately this seems to be way too
-complicated to achieve with Liquid's syntax alone.
+and alphabetically after that. Unfortunately this is hard to achieve in a
+Liquid template, as you can't sort a hash of data.
 
-[I found an ingenious partial solution
-here](https://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/). To get
-around the fact that you can't construct hashes of data in Liquid, or sort
-hashes, he put all the desired data into a long string separated by a special
-character (he used `#`, I used `$`), so that he could later break it up into
-an array which you can then sort... it's not pretty but it works 😬. Using this
-method I managed to get the tag cloud sorted in reverse by popularity (high to
-low), then alphabetically.  
+[I found an ingenious workaround here][ingenious-workaround]. Instead of sorting
+a hash, he put all the desired data into a long string separated by a special
+character (he used `#`, I used `$`), so that he could later break it up into an
+array, which you *can* sort in Liquid. It's not pretty but it works 😬. Using
+this method I managed to get the tag cloud sorted in reverse order by popularity
+(high to low), then alphabetically. You can see all the gory details [in the
+GitHub repo for this site][tags-page-in-github].
+
+A couple more styling rules in `assets/main.scss` and that was the tags page
+finished. Once all that was sorted out I went back and updated the tags in
+`_layouts/post.html` to link to the appropriate place on the tags page, like
+this:
+
+{% raw %}
+```liquid
+<a href="/tags#{{ tag | slugify }}">{{ tag }}</a>
+```
+{% endraw %}
+
+[ingenious-workaround]:https://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/
+[tags-page-in-github]:https://github.com/Hives/hives.github.io/blob/1735a794a93dacfd74945814158495b55c1cf9e5/tags.html
+[codinfox-lanyon-tags-page]:https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
