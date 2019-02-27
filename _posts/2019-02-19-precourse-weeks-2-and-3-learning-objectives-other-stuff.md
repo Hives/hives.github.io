@@ -29,7 +29,7 @@ You can also do gnarly things like this:
 
 ```ruby
 first, *middle, last = [0,1,2,3,4,5,6]
-p first # outputs 1
+p first # outputs 0
 p middle # outputs [1, 2, 3, 4, 5]
 p last # outputs 6
 ```
