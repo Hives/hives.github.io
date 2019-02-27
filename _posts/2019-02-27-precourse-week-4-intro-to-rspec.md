@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precourse Week 4, RSspec
+title: Precourse Week 4, intro to RSspec
 date: 2019-02-27 01:25 +0000
 category: makers
 tags: [precourse, rspec, ruby]
