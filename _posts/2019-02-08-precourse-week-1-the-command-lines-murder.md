@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precourse Week 1 - The Command Line Murder
+title: Precourse Week 1, The Command Line Murder
 date: 2019-02-08 18:53 +0000
 category: makers
 tags: [command line, precourse]

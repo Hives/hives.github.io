@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precourse Week 1 - Version Control
+title: Precourse Week 1, Version Control
 date: 2019-02-07 16:51 +0000
 category: [makers]
 tags: [git, github, precourse]

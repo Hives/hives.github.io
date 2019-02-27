@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Precourse week 4, RSspec
+title: Precourse Week 4, RSspec
 date: 2019-02-27 01:25 +0000
 category: makers
 tags: [precourse, rspec, ruby]
 ---
 
 Last week I met up with [Cosmin][cosmins-github], one of the other Makers
-students in my cohort, and we pair programmed FizzBuzz using Rspec to write
-tests as we went along according to the "Red, Green, Refactor, Repeat" method. I
-also met up with my mentor [Luca][lucas-github] today to do something similar
-(see previous post).  Here's some stuff I've learnt about Rspec.
+students in my cohort, and we did the first exercise from Week 4 of the
+precourse - pair programming FizzBuzz. We used Rspec to write tests as we went
+along according to the "Red, Green, Refactor, Repeat" method. I also met up with
+my mentor [Luca][lucas-github] today to do something similar (see previous
+post).  Here's some stuff I've learnt about Rspec.
 
 - [Rspec core docs](https://relishapp.com/rspec/rspec-core/docs): rspec-core
 provides the structure for RSpec code examples

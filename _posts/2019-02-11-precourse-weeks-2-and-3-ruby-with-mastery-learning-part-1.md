@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precourse Weeks 2 and 3 - Ruby with mastery learning
+title: Precourse Weeks 2 and 3, Ruby with mastery learning
 date: 2019-02-12 15:06 +0000
 category: makers
 tags: [ruby, precourse]

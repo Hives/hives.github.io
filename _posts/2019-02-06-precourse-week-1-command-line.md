@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Precourse Week 1 - Command Line
+title: Precourse Week 1, Command Line
 date: 2019-02-06 17:00:00 +0000
 categories: [makers]
 tags: [precourse, command line]
