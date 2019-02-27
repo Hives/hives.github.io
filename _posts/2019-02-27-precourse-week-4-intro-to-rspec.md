@@ -65,6 +65,10 @@ From rspec-core docs:
 > `describe` you can declare nested groups using the `describe` or `context` methods,
 > or you can declare examples using the `it` or `specify` methods.
 
+The text you add to the `describe` and `it` methods is used to give feedback
+when you run the tests, so make sure you use something that accurately describes
+the test.
+
 From rspec-expectations docs:
 > The basic structure of an rspec expectation is:
 > ```ruby
@@ -74,8 +78,10 @@ From rspec-expectations docs:
 > Note: You can also use `expect(..).to_not` instead of `expect(..).not_to`.
 > One is an alias to the other, so you can use whichever reads better to you.
 
-The text you add to the `describe` and `it` methods is used to give feedback
-when you run the tests, so make sure you use something helpful.
+So Rspec executes the expression passed to the `expect` method and compares it
+with the expression passed to the `matcher` method, according to the comparison
+defined by the `matcher`. (In the example above the matcher simply tests for
+equality, but there are many more options.)
 
 Let's try putting this code in `lib/middle.rb`:
 
@@ -110,9 +116,9 @@ Failed examples:
 rspec ./spec/mid_char_spec.rb:7 # middle_char method returns "C" when given "ABCDE"
 ```
 
-One test passes, the other fails. The output gives a lot of useful detail. We
-can also see the value of giving our tests clear descriptions, as they are used
-in RSpec's output to identify the failing tests.
+One test passes, the other fails. The output gives a lot of useful detail about
+failing tests. We can also see here the value of giving our tests clear
+descriptions, as they are used in RSpec's output to identify the failing tests.
 
 We have more options than just testing for equality, e.g:
 
