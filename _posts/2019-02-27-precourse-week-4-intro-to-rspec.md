@@ -23,7 +23,7 @@ helps to control the context in a code example by letting you set known return
 values, fake implementations of methods, and even set expectations that specific
 messages are received by an object.
 
-You can set up rspec in a folder by running `rspec --init`. This creates some
+You can set up Rspec in a folder by running `rspec --init`. This creates some
 conventional files - `spec/spec_helper.rb`, a well-commented config, and
 `.rspec` which tells Rspec to `require` `spec_helper.rb` when you run it in the
 folder.
