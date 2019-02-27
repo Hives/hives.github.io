@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Precourse Week 4, pairing on FizzBuzz
+title: notes from cosmin session
 category: makers
-tags: [ruby, fizzbuzz, tdd, rspec, git, github, pair programming, precourse]
+tags: 
 ---
 
-Today I met up with [Cosmin][cosmins-github], another Makers candidate in my
-cohort, to do some work together. We decided to make an early start on the work
-for Week 4, the first exercise of which was pair-programming FizzBuzz using a
-Test Driven Development (TDD) process.
+So when working in
+this way you have to think about the smallest practical steps you can make along
+the way.
+
+Last week I met up with [Cosmin][cosmins-github], another Makers candidate
+in my cohort, to do some work together. We decided to make an early start on the
+work for Week 4, the first exercise of which was pair-programming FizzBuzz using
+a Test Driven Development (TDD) process.
 
 The teachable.com page for the exercise is
 [here](https://makersacademy.teachable.com/courses/256825/lectures/3989229>).
@@ -33,4 +37,5 @@ git checkout --patch pauls-branch3 spec/fizzBuzz_spec.rb
 Used this to push my branch to GitHub (what does it mean?):
 git push --set-upstream origin pauls-branch3
 
-[cosmins-github]:https://github.com/micosmin
+
+
