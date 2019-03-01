@@ -80,10 +80,13 @@ From rspec-expectations docs:
 
 So Rspec executes the expression passed to the `expect` method and compares it
 with the expression passed to the `matcher` method, according to the comparison
-defined by the `matcher`. (In the example above the matcher simply tests for
-equality, but there are many more options.)
+defined by the `matcher`. In the example above the matcher simply tests for
+equality, but there are many more options.
 
-Let's try putting this code in `lib/middle.rb`:
+When using TDD you should progress by "baby steps", in other words by writing
+the simplest possible code that satisfies your tests. In that spirit let's put
+this code in `lib/middle.rb`, which should pass the first test but not the
+second:
 
 ```ruby
 def middle_char(string)
