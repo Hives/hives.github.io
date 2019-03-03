@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Add pagination to index of blog posts
+date: 2019-03-03 23:13 +0000
 category: metablogging
 tags: [jekyll]
 ---
@@ -13,13 +14,13 @@ But I found this blog post more helpful, which walks you through setting it up
 in more detail:
 <https://blog.webjeda.com/jekyll-pagination/>
 
-You need to enable the jekyll-paginate plugin in \_config.yml, like this:
+You need to enable the jekyll-paginate plugin in `_config.yml`, like this:
 
 ```ruby
 plugins: [jekyll-paginate]
 ```
 
-and also in the Gemfile. Pagination settings are set in \_config.yml like this:
+and also in the Gemfile. Pagination settings are set in `_config.yml` like this:
 
 ```ruby
 paginate: 8 # number of posts per page
