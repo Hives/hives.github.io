@@ -9,8 +9,8 @@ tags: [jekyll, liquid]
 I wanted to add some features to my (this) Jekyll blog. Nothing too outré - a
 tags page, next/previous post links, pagination on the list of posts. Helpfully,
 Minima, the Jekyll default theme, has a README file with information about
-customising it. I'm not using the most up to date version of Minima (maybe
-because the github-pages gem requires an older version of Jekyll?), so here's
+customising it. I'm not using the most up to date version of Minima (I think 
+because the github-pages gem requires an older version of Jekyll), so here's
 the correct README for the version I'm using:
 
 <https://github.com/jekyll/minima/blob/v2.5.0/README.md>
