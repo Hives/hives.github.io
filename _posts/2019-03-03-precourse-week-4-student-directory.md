@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Precourse Week 4, student directory
-date: 2019-03-03 23:13 +0000
+date: 2019-03-03 21:13 +0000
 category: makers
 tags: [ruby, reading, writing, csvs]
 ---

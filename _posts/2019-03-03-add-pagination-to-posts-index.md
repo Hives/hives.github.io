@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add pagination to index of blog posts
-date: 2019-03-03 23:13 +0000
+date: 2019-03-03 21:13 +0000
 category: metablogging
 tags: [jekyll]
 ---

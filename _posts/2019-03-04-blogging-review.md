@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blogging review
-date: 2019-03-03 10:20 +0000
+date: 2019-03-03 22:20 +0000
 category: [makers, metablogging]
 tags: [blogging]
 sitemap: false

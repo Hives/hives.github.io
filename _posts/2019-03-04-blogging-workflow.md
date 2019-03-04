@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blogging workflow
-date: 2019-03-03 10:15 +0000
+date: 2019-03-03 22:15 +0000
 categories: [makers, metablogging]
 tags: [jekyll, vim, markdown]
 ---
